@@ -2,9 +2,9 @@ development:
   adapter: async
 
 test:
-  adapter: async
+  adapter: test
 
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: calorie-counter-api_production
+  channel_prefix: calorie_counter_api_2_production

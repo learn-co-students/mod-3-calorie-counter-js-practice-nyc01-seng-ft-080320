@@ -1,0 +1,107 @@
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateApiV1CalorieEntries (20190318183100)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "api_v1_calorie_entries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "calorie" float, "note" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190318183100"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-09-22 23:28:19.246619"], ["updated_at", "2020-09-22 23:28:19.246619"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mApi::V1::CalorieEntry Create (0.4ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 580.0], ["note", "Poke Bar - Medium Poke Bowl"], ["created_at", "2020-09-22 23:28:23.904301"], ["updated_at", "2020-09-22 23:28:23.904301"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mApi::V1::CalorieEntry Create (0.3ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 208.0], ["note", "Taiyaki - Ice-cream cone"], ["created_at", "2020-09-22 23:28:23.908338"], ["updated_at", "2020-09-22 23:28:23.908338"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mApi::V1::CalorieEntry Create (0.2ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 800.0], ["note", "Taco Truck - Chicken Burrito"], ["created_at", "2020-09-22 23:28:23.911297"], ["updated_at", "2020-09-22 23:28:23.911297"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mApi::V1::CalorieEntry Create (0.9ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 266.0], ["note", "Vegetable Kofta"], ["created_at", "2020-09-22 23:28:23.915341"], ["updated_at", "2020-09-22 23:28:23.915341"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mApi::V1::CalorieEntry Create (0.3ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 304.0], ["note", "Kung Fu Tea - Passion fruit green tea with boba"], ["created_at", "2020-09-22 23:28:23.922739"], ["updated_at", "2020-09-22 23:28:23.922739"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mApi::V1::CalorieEntry Create (0.3ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 918.0], ["note", "Bodega down the block - Cheese burger with all the topings..."], ["created_at", "2020-09-22 23:28:23.926586"], ["updated_at", "2020-09-22 23:28:23.926586"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2020-09-22 19:28:36 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.7ms | Allocations: 480)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 2633)
+
+
+Started GET "/fsa" for ::1 at 2020-09-22 19:28:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/fsa"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api_v1_calorie_entries" for ::1 at 2020-09-22 19:28:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api_v1_calorie_entries"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/calorie_entries" for ::1 at 2020-09-22 19:29:00 -0400
+Processing by Api::V1::CalorieEntriesController#index as HTML
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 5889)
+
+
