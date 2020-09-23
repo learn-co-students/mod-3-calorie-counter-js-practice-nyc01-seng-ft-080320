@@ -105,3 +105,1661 @@ Processing by Api::V1::CalorieEntriesController#index as HTML
 Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 5889)
 
 
+Started GET "/index.html" for 127.0.0.1 at 2020-09-22 19:52:17 -0400
+  
+LoadError (cannot load such file -- /Users/adamsmolenski/Flatiron/code/Mod3/practice/mod-3-calorie-counter-js-practice-nyc01-seng-ft-080320/calorie-counter-api-2/config/routes.rb):
+  
+bootsnap (1.4.8) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+bootsnap (1.4.8) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+railties (6.0.3.3) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+railties (6.0.3.3) lib/rails/application/routes_reloader.rb:40:in `each'
+railties (6.0.3.3) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+railties (6.0.3.3) lib/rails/application/routes_reloader.rb:20:in `reload!'
+railties (6.0.3.3) lib/rails/application/routes_reloader.rb:29:in `block in updater'
+activesupport (6.0.3.3) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (6.0.3.3) lib/rails/application/routes_reloader.rb:10:in `execute'
+railties (6.0.3.3) lib/rails/application/finisher.rb:197:in `block (2 levels) in <module:Finisher>'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:428:in `instance_exec'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:605:in `block (2 levels) in default_terminator'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:604:in `catch'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:604:in `block in default_terminator'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:134:in `run_callbacks'
+activesupport (6.0.3.3) lib/active_support/execution_wrapper.rb:111:in `run!'
+activesupport (6.0.3.3) lib/active_support/reloader.rb:114:in `run!'
+activesupport (6.0.3.3) lib/active_support/execution_wrapper.rb:73:in `block in run!'
+activesupport (6.0.3.3) lib/active_support/execution_wrapper.rb:70:in `tap'
+activesupport (6.0.3.3) lib/active_support/execution_wrapper.rb:70:in `run!'
+activesupport (6.0.3.3) lib/active_support/reloader.rb:63:in `run!'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/index.html" for 127.0.0.1 at 2020-09-22 19:53:01 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-09-22 19:53:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/index" for 127.0.0.1 at 2020-09-22 19:53:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-09-22 19:53:13 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.1ms | Allocations: 195)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 866)
+
+
+Started GET "/" for ::1 at 2020-09-22 19:53:16 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.3ms | Allocations: 190)
+Completed 200 OK in 18ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 740)
+
+
+Started GET "/api_v1_calorie_entries_path" for 127.0.0.1 at 2020-09-22 19:53:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api_v1_calorie_entries_path"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "//api/v1/calorie_entries" for 127.0.0.1 at 2020-09-22 19:53:53 -0400
+Processing by Api::V1::CalorieEntriesController#index as HTML
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 31.0ms | ActiveRecord: 1.5ms | Allocations: 5996)
+
+
+Started GET "/" for ::1 at 2020-09-22 19:53:58 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 238)
+
+
+Started GET "/gfd" for ::1 at 2020-09-22 19:54:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/gfd"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "//api/v1/calorie_entries" for 127.0.0.1 at 2020-09-22 19:54:07 -0400
+Processing by Api::V1::CalorieEntriesController#index as HTML
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1592)
+
+
+Started GET "//api/v1/calorie_entries" for ::1 at 2020-09-22 19:54:12 -0400
+Processing by Api::V1::CalorieEntriesController#index as HTML
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1601)
+
+
+Started GET "/api/v1/calorie_entries" for ::1 at 2020-09-22 19:54:17 -0400
+Processing by Api::V1::CalorieEntriesController#index as HTML
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1600)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:04:13 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CalorieEntriesController#index as HTML
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1604)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:07:33 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:08:54 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.7ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 1.3ms | Allocations: 5811)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:08:55 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 1606)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:08:56 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1606)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:08:58 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1606)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:09:03 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1606)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:09:04 -0400
+Processing by Api::V1::CalorieEntriesController#index as HTML
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1588)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:09:41 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1590)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:09:54 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 28ms (Views: 10.8ms | ActiveRecord: 1.1ms | Allocations: 5812)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:25:46 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.6ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 1618)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:26:05 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1606)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:28:54 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1606)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:31:46 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:31:48 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:31:51 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:31:52 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:33:24 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1606)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:37:12 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:37:22 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:37:23 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:37:24 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:38:43 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:39:30 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:39:55 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:40:17 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:40:35 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:40:48 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:41:27 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.2ms | Allocations: 1592)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:41:44 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:42:18 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:42:30 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:42:40 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:42:46 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:43:48 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:43:59 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (3.7ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 3.7ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:45:01 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:45:08 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:45:28 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:46:28 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:46:41 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:47:04 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:48:36 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:48:46 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:49:29 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:49:43 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:50:03 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:51:40 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:52:03 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:52:20 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 20:53:52 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:04:33 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (1.7ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.7ms | Allocations: 1607)
+
+
+Started POST "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:04:43 -0400
+Processing by Api::V1::CalorieEntriesController#create as */*
+  Parameters: {"calorie"=>"500", "note"=>"cake!!!", "calorie_entry"=>{"calorie"=>"500", "note"=>"cake!!!"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+  [1m[36mApi::V1::CalorieEntry Create (1.7ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 500.0], ["note", "cake!!!"], ["created_at", "2020-09-23 01:04:43.178442"], ["updated_at", "2020-09-23 01:04:43.178442"]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 1.0ms | ActiveRecord: 3.6ms | Allocations: 2771)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:04:47 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1719)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:05:32 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1719)
+
+
+Started POST "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:05:38 -0400
+Processing by Api::V1::CalorieEntriesController#create as */*
+  Parameters: {"calorie"=>"200", "note"=>"ice cream", "calorie_entry"=>{"calorie"=>"200", "note"=>"ice cream"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+  [1m[36mApi::V1::CalorieEntry Create (0.6ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 200.0], ["note", "ice cream"], ["created_at", "2020-09-23 01:05:38.911980"], ["updated_at", "2020-09-23 01:05:38.911980"]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+Completed 201 Created in 37ms (Views: 0.4ms | ActiveRecord: 7.1ms | Allocations: 2445)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:08:42 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:12:24 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:12:53 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:13:25 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:13:47 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:14:22 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:15:25 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:15:36 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:17:56 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:20:04 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:20:25 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:25:21 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:25:28 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1849)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-22 21:25:29 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/adamsmolenski/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.7ms | Allocations: 315)
+Completed 200 OK in 43ms (Views: 31.4ms | ActiveRecord: 0.0ms | Allocations: 1590)
+
+
+Started DELETE "/api/v1/calorie_entries/8" for ::1 at 2020-09-22 21:25:31 -0400
+Processing by Api::V1::CalorieEntriesController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mApi::V1::CalorieEntry Load (0.7ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+  [1m[36mApi::V1::CalorieEntry Destroy (2.1ms)[0m  [1m[31mDELETE FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 5.3ms | Allocations: 2989)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:25:51 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1719)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:26:18 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.4ms | Allocations: 1719)
+
+
+Started DELETE "/api/v1/calorie_entries/7" for ::1 at 2020-09-22 21:26:20 -0400
+Processing by Api::V1::CalorieEntriesController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+  [1m[36mApi::V1::CalorieEntry Destroy (0.3ms)[0m  [1m[31mDELETE FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 2.2ms | Allocations: 2555)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:26:25 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:27:11 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.1ms | Allocations: 1592)
+
+
+Started POST "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:27:19 -0400
+Processing by Api::V1::CalorieEntriesController#create as */*
+  Parameters: {"calorie"=>"10000", "note"=>"adam's tears", "calorie_entry"=>{"calorie"=>"10000", "note"=>"adam's tears"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+  [1m[36mApi::V1::CalorieEntry Create (0.5ms)[0m  [1m[32mINSERT INTO "api_v1_calorie_entries" ("calorie", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["calorie", 10000.0], ["note", "adam's tears"], ["created_at", "2020-09-23 01:27:19.059951"], ["updated_at", "2020-09-23 01:27:19.059951"]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 0.7ms | ActiveRecord: 3.7ms | Allocations: 2442)
+
+
+Started DELETE "/api/v1/calorie_entries/9" for ::1 at 2020-09-22 21:27:21 -0400
+Processing by Api::V1::CalorieEntriesController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+  [1m[36mApi::V1::CalorieEntry Destroy (0.3ms)[0m  [1m[31mDELETE FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:38:in `destroy'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 4.6ms | Allocations: 2555)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:29:54 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:32:55 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:33:11 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:33:13 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:33:41 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:35:03 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:35:14 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:35:35 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.6ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:35:42 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:36:36 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:38:41 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started PATCH "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:38:42 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/api/v1/calorie_entries"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:38:56 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1588)
+
+
+Started PATCH "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:38:59 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/api/v1/calorie_entries"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:39:04 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1588)
+
+
+Started PATCH "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:39:11 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/api/v1/calorie_entries"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:39:24 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 1588)
+
+
+Started PATCH "/api/v1/calorie_entries/[object%20HTMLLIElement]" for ::1 at 2020-09-22 21:39:26 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"id"=>"[object HTMLLIElement]"}
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 611)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Api::V1::CalorieEntry with 'id'=[object HTMLLIElement]):
+  
+app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:39:34 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1588)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:40:33 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:40:54 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:41:04 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:41:36 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:42:51 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:43:35 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:50:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1607)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 21:51:04 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"590", "note"=>"POKEEEEE", "id"=>"1", "calorie_entry"=>{"calorie"=>"590", "note"=>"POKEEEEE"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (3.2ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 590.0], ["note", "POKEEEEE"], ["updated_at", "2020-09-23 01:51:04.519592"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 4.4ms | Allocations: 3109)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:51:09 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:51:43 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 21:52:07 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"1000000", "note"=>"Poke bowl garlic shrimp\n", "id"=>"1", "calorie_entry"=>{"calorie"=>"1000000", "note"=>"Poke bowl garlic shrimp\n"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (0.6ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 1000000.0], ["note", "Poke bowl garlic shrimp\n"], ["updated_at", "2020-09-23 01:52:07.320071"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 3.9ms | Allocations: 3060)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:52:07 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 21:52:26 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"1000000", "note"=>"Poke bowl garlic shrimp\n", "id"=>"1", "calorie_entry"=>{"calorie"=>"1000000", "note"=>"Poke bowl garlic shrimp\n"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 918)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:52:26 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 1591)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 21:52:29 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"1000", "note"=>"Poke bowl garlic shrimp\n", "id"=>"1", "calorie_entry"=>{"calorie"=>"1000", "note"=>"Poke bowl garlic shrimp\n"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (1.3ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 1000.0], ["updated_at", "2020-09-23 01:52:29.593806"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 6.6ms | Allocations: 3046)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:52:29 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:53:28 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.6ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 1589)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:56:03 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started PATCH "/api/v1/calorie_entries/undefined" for ::1 at 2020-09-22 21:56:12 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"10", "note"=>"ice\n", "id"=>"undefined", "calorie_entry"=>{"calorie"=>"10", "note"=>"ice\n"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 615)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Api::V1::CalorieEntry with 'id'=undefined):
+  
+app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:56:12 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (2.8ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 2.8ms | Allocations: 1588)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:56:15 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started PATCH "/api/v1/calorie_entries/undefined" for ::1 at 2020-09-22 21:56:25 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"100", "note"=>"poke", "id"=>"undefined", "calorie_entry"=>{"calorie"=>"100", "note"=>"poke"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 615)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Api::V1::CalorieEntry with 'id'=undefined):
+  
+app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:56:25 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 1588)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:56:34 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 1589)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 21:56:45 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"666", "note"=>"vodka\n", "id"=>"1", "calorie_entry"=>{"calorie"=>"666", "note"=>"vodka\n"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (0.5ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 666.0], ["note", "vodka\n"], ["updated_at", "2020-09-23 01:56:45.878946"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 3057)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:56:45 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:57:49 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 21:57:58 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"555", "note"=>"brownies\n", "id"=>"1", "calorie_entry"=>{"calorie"=>"555", "note"=>"brownies\n"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (0.4ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 555.0], ["note", "brownies\n"], ["updated_at", "2020-09-23 01:57:58.318937"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.0ms | Allocations: 3056)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:57:58 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:59:12 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:59:14 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 21:59:28 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"200", "note"=>"cookies", "id"=>"1", "calorie_entry"=>{"calorie"=>"200", "note"=>"cookies"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (0.4ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 200.0], ["note", "cookies"], ["updated_at", "2020-09-23 01:59:28.378905"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 3056)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 21:59:28 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:00:19 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 22:00:31 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"555", "note"=>"kevins tears\n", "id"=>"1", "calorie_entry"=>{"calorie"=>"555", "note"=>"kevins tears\n"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (0.5ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 555.0], ["note", "kevins tears\n"], ["updated_at", "2020-09-23 02:00:31.387298"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 4.4ms | Allocations: 3056)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:00:31 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:05:53 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.1ms | Allocations: 1590)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 22:06:02 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"555", "note"=>"beer", "id"=>"1", "calorie_entry"=>{"calorie"=>"555", "note"=>"beer"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.5ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (0.4ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["note", "beer"], ["updated_at", "2020-09-23 02:06:02.434673"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 3045)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:06:02 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:06:24 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started PATCH "/api/v1/calorie_entries/1" for ::1 at 2020-09-22 22:06:36 -0400
+Processing by Api::V1::CalorieEntriesController#update as */*
+  Parameters: {"calorie"=>"300", "note"=>"horseradish vodka", "id"=>"1", "calorie_entry"=>{"calorie"=>"300", "note"=>"horseradish vodka"}}
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries" WHERE "api_v1_calorie_entries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:45:in `set_api_v1_calorie_entry'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[36mApi::V1::CalorieEntry Update (1.9ms)[0m  [1m[33mUPDATE "api_v1_calorie_entries" SET "calorie" = ?, "note" = ?, "updated_at" = ? WHERE "api_v1_calorie_entries"."id" = ?[0m  [["calorie", 300.0], ["note", "horseradish vodka"], ["updated_at", "2020-09-23 02:06:36.675728"], ["id", 1]]
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:29:in `update'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 9.4ms | Allocations: 3056)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:06:36 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:08:45 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:08:58 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:09:35 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:10:04 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:10:20 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.5ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:10:53 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:11:06 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:11:13 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:11:28 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:11:49 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:13:03 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.7ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.7ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:13:09 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:15:21 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:15:22 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.6ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:15:36 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:16:05 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:16:20 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.4ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:16:33 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 95ms (Views: 94.5ms | ActiveRecord: 0.1ms | Allocations: 1590)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:18:18 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:18:40 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:18:52 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:20:32 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:21:16 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:21:18 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:21:24 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:22:12 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:22:20 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:22:23 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:22:38 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:22:39 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.1ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:22:59 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:23:15 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:23:32 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:23:33 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:23:34 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:23:54 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.2ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:24:31 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1587)
+
+
+Started GET "/api/v1/calorie_entries/" for ::1 at 2020-09-22 22:24:34 -0400
+Processing by Api::V1::CalorieEntriesController#index as */*
+  [1m[36mApi::V1::CalorieEntry Load (0.3ms)[0m  [1m[34mSELECT "api_v1_calorie_entries".* FROM "api_v1_calorie_entries"[0m
+  ↳ app/controllers/api/v1/calorie_entries_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1587)
+
+
