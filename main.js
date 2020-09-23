@@ -5,9 +5,6 @@ const BASE_URL = "http://localhost:3000/api/v1/calorie_entries/"
         getCalories();
         submitHandler();
         clickHandler();
-        const elements = (document.getElementsByTagName("strong"))[0]
-        console.log(elements)        
-        
     })
 
     function getCalories(){
@@ -20,6 +17,8 @@ const BASE_URL = "http://localhost:3000/api/v1/calorie_entries/"
                 renderFood(food)
             }
         })
+           
+        
     }
 
 
@@ -50,18 +49,33 @@ const BASE_URL = "http://localhost:3000/api/v1/calorie_entries/"
     function submitHandler(){
         document.addEventListener('submit', event => {
             event.preventDefault();
-            console.dir(event.target)
+            
             if (event.target[2].classList.contains("add")){
                 createEntry(event.target);
 
             }
             if (event.target[2].classList.contains("update")){   
                 const autoClose = document.querySelector(".uk-close")
-                console.log(autoClose)
+              
                 foodPatch(event.target)
                 autoClose.click();
-            };
+            }
+            else if (event.target[3].classList.contains('bmr')){
+                calculateBmr(event.target)
+                
+            }
         })
+    }
+
+    function calculateProgress(){
+        
+            const elements = (document.getElementsByTagName("strong"));
+            let sum = 0
+            for (let element of elements) {
+                sum += parseInt(element.innerText)
+            };
+            console.log(sum)
+            document.querySelector(".uk-progress").value = sum
     }
 
     const clickHandler = () => {
@@ -72,7 +86,7 @@ const BASE_URL = "http://localhost:3000/api/v1/calorie_entries/"
             }
             if (e.target.matches(`[data-svg="pencil"]`)) {
                 const editForm = document.querySelector("#edit-calorie-form")
-                // console.log
+                
                 editForm.calories.value = (e.target.closest("li").querySelector("strong").textContent)
                 editForm.notes.value = (e.target.closest("li").querySelector("em").textContent)
                 editForm.dataset.foodId = e.target.closest("li").dataset.id
@@ -81,6 +95,27 @@ const BASE_URL = "http://localhost:3000/api/v1/calorie_entries/"
     }
 
 
+    const calculateBmr = target => {
+       
+        const weight = parseInt(target[0].value);
+        const height = parseInt(target[1].value);
+        const age = parseInt(target[2].value);
+
+        const lowerBmr = document.querySelector("span#lower-bmr-range");
+        const upperBmr = document.querySelector("span#higher-bmr-range");
+        
+        lowerBmr.textContent = 655 + (4.35 * weight) + (4.7 * height) - (4.7 * age);
+        upperBmr.textContent = 66 + (6.23 * weight) + (12.7 * height) - (6.8 * age);
+
+        let avgBmr = (parseInt(lowerBmr.textContent) + parseInt(upperBmr.textContent))/2
+        console.dir(document.querySelector(".uk-progress"))
+        document.querySelector(".uk-progress").setAttribute("max", `${avgBmr}`)
+        
+        calculateProgress()
+    }
+    
+    // * forumla for lower-range: `BMR = 655 + (4.35 x weight in pounds) + (4.7 x height in inches) - (4.7 x age in years)`
+    // * formula for upper-range: `BMR = 66 + (6.23 x weight in pounds) + (12.7 x height in inches) - (6.8 x age in years)`
 
     const clickDeleter = (foodDelete) => {
         const foodId = foodDelete.dataset.id;
@@ -122,7 +157,7 @@ const BASE_URL = "http://localhost:3000/api/v1/calorie_entries/"
     function createEntry(form){
         const calories = form.calories.value
         const notes = form.notes.value
-        console.log (calories, notes)
+       
 
         const options = {
 
