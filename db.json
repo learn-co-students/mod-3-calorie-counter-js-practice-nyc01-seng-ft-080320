@@ -1,0 +1,34 @@
+{
+  "calories_list_items": [
+    {
+      "id": 1,
+      "calories": 455,
+      "note": "Poke Bar - Medium Poke Bowl"
+    },
+    {
+      "id": 2,
+      "calories": 208,
+      "note": "Taiyaki - Ice-cream cone"
+    },
+    {
+      "id": 3,
+      "calories": 200,
+      "note": "Taco Truck - Chicken Burrito"
+    },
+    {
+      "id": 4,
+      "calories": 266,
+      "note": "Vegetable Kofta"
+    },
+    {
+      "id": 5,
+      "calories": 304,
+      "note": "Kung Fu Tea - Passion fruit green tea with boba"
+    },
+    {
+      "id": 6,
+      "calories": 100,
+      "note": "Bodega down the block - Cheese burger with all the topings"
+    }
+  ]
+}
